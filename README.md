@@ -29,6 +29,30 @@ src/test/java/
 
 2. Los reportes se generan en `target/surefire-reports`.
 
+### Alternativa rápida (script PowerShell)
+
+Puedes usar el script `run-tests.ps1` en la raíz del proyecto:
+
+```powershell
+# Ejecutar todo e instalar navegadores si hace falta (headless por defecto)
+./run-tests.ps1
+
+# Modo visible (no headless)
+./run-tests.ps1 -Visible
+
+# Ejecutar solo la suite PIM
+./run-tests.ps1 -Class tests.PIMTests
+
+# Ejecutar un método específico
+./run-tests.ps1 -Class tests.PIMTests -Method testCreateEmployee
+
+# Saltar la instalación de navegadores (cuando ya están instalados)
+./run-tests.ps1 -SkipInstall
+
+# Especificar ruta de Maven si no está en PATH
+./run-tests.ps1 -MavenPath "$env:USERPROFILE\apache-maven-3.9.11\bin\mvn.cmd"
+```
+
 ## Configuración de modo headless/visible
 Por defecto, las pruebas corren en modo headless. Para ver el navegador, ejecuta:
 
