@@ -2,17 +2,19 @@
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-21",
-            "path": "C:\\Program Files\\Java\\jdk-21.0.4",
+            "path": "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.6.7-hotspot",
             "default": true
         }
     ],
+    "java.configuration.updateBuildConfiguration": "automatic",
     "java.compile.nullAnalysis.mode": "automatic",
     "editor.formatOnSave": true,
     "java.saveActions.organizeImports": true,
+    "maven.executable.path": "C:\\Users\\edugu\\apache-maven-3.9.11\\bin\\mvn.cmd",
     "maven.terminal.customEnv": [
         {
             "environmentVariable": "JAVA_HOME",
-            "value": "C:\\Program Files\\Java\\jdk-21.0.4"
+            "value": "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.6.7-hotspot"
         }
     ]
 }
