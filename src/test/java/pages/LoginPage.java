@@ -22,7 +22,7 @@ public class LoginPage {
         page.fill(passwordSelector, password);
         page.click(loginButtonSelector);
         // Esperar a que el dashboard cargue tras login
-        page.waitForURL("**/dashboard/**", new Page.WaitForURLOptions().setTimeout(15000));
+        page.waitForURL("**/dashboard/**", new Page.WaitForURLOptions().setTimeout(60000));
     }
 
     public boolean isErrorVisible() {

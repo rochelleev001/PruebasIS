@@ -28,7 +28,8 @@ public class TestBase {
         context = browser.newContext();
         page = context.newPage();
         // Timeout por defecto para esperas de elementos/navegación
-        page.setDefaultTimeout(15000);
+        page.setDefaultTimeout(60000);
+        page.setDefaultNavigationTimeout(60000);
     }
 
     @AfterEach

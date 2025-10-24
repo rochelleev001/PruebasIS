@@ -1,1 +1,6 @@
+pages\DashboardPage.class
+base\TestBase.class
+tests\PIMTests.class
+pages\LoginPage.class
+pages\PIMPage.class
 com\miempresa\AppTest.class
